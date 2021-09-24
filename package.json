@@ -1,0 +1,22 @@
+{
+  "name": "pomodoro-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd pomodoro-frontend && yarn start",
+    "backend": "cd pomodoro-backend && yarn start",
+    "start": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "react-dotenv": "^0.1.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.2.0"
+  }
+}
